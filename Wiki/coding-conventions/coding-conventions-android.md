@@ -28,7 +28,7 @@ fun sendMessage(message: String,subMessage: String){
 }
 
 // ダメ、引数のカンマの後にスペースが無い
-object.sendMessage("hogehoge","fugafuga")
+sendMessage("hogehoge","fugafuga")
 ```
 
 # 変数名
@@ -44,11 +44,7 @@ var itemCount: Int = 0
 var groupId: String = getGropId()
 var userValue: UserValue = getUserValue()
 
-// ダメ
-var itemCount: Int       = 0
-var groupId: String      = getGropId()
-var userValue: UserValue = getUserValue()
-
+// 以下ダメ
 var itemCount: Int = 0
 var groupId:   String = getGropId()
 var userValue: UserValue = getUserValue()
@@ -56,6 +52,11 @@ var userValue: UserValue = getUserValue()
 var itemCount:Int=0
 var groupId:String=getGropId()
 var userValue:UserValue=getUserValue()
+
+// これは場所によりありなとこもあるけど私は嫌いなのでなるべくやめたい
+var itemCount: Int       = 0
+var groupId: String      = getGropId()
+var userValue: UserValue = getUserValue()
 ```
 
 # ローカル変数名
@@ -74,18 +75,19 @@ var userValue:UserValue=getUserValue()
 - activityやfragment、item、ic(iconの意)などの接頭辞を付ける。
 
 ```
-Fragment = fragment_hoge
-CustomView = view_hoge
-ItemView = item_view_hoge
+Fragment = fragment_example
+CustomView = view_example
+ItemView = item_view_example
 ```
 
 # id名
-- lowerCamelCase
-```
+- snake_case
+```xml
+<!-- 昔はlowerCamelCaseだったけどViewBindingのおかげでid名あんま気にせんで良くなった -->
 <TextView
-  android:id="@+id/yasashiTitle" />
+  android:id="@+id/example_title" />
 <TextView
-  android:id="@+id/yasashiContent" />
+  android:id="@+id/example_content" />
 ```
 
 # 参考記事
