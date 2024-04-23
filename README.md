@@ -1,2 +1,2 @@
 # ShiokaraDocuments
-A repository for wikis and other documents written by Shiokara.
+A repository for wikis and other documents written by Ikanoshiokara.
